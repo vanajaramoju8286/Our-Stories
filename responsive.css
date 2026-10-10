@@ -1,0 +1,251 @@
+/* ==========================================
+   OUR STORIES — LUXURY COFFEE BRAND WEBSITE
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================== */
+
+/* ------------------------------------------
+   LARGE LAPTOP & TABLET (max-width: 1180px)
+   ------------------------------------------ */
+@media screen and (max-width: 1180px) {
+  .editorial-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .detail-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+}
+
+/* ------------------------------------------
+   TABLET & MOBILE MENU TRIGGER (max-width: 992px)
+   ------------------------------------------ */
+@media screen and (max-width: 992px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .parallax-img {
+    height: 450px;
+  }
+
+  .ritual-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ritual-media-box {
+    height: 360px;
+  }
+
+  .detail-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 1.8rem;
+  }
+
+  .detail-img-frame {
+    height: 380px;
+  }
+
+  .origin-cards-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .modal-body-grid {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .modal-media {
+    height: 260px;
+  }
+
+  .modal-details {
+    padding: 1.8rem;
+  }
+}
+
+/* ------------------------------------------
+   MOBILE PORTRAIT (max-width: 768px)
+   ------------------------------------------ */
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .header-container {
+    width: 94%;
+  }
+
+  .header-logo-svg, .header-logo-img {
+    max-width: 170px;
+    height: auto;
+  }
+
+  .header-cta-btn {
+    display: none;
+  }
+
+  .hero-reveal-container {
+    width: 94%;
+    padding: 1rem;
+  }
+
+  .hero-official-logo {
+    max-width: 220px !important;
+  }
+
+  .hero-tagline {
+    font-size: 2.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-cta-button {
+    padding: 14px 30px;
+    font-size: 0.72rem;
+  }
+
+  .hero-status-tag {
+    top: 80px;
+    left: 4%;
+    font-size: 0.55rem;
+    padding: 4px 10px;
+  }
+
+  .hero-replay-btn {
+    bottom: 25px;
+    right: 4%;
+    padding: 6px 12px;
+  }
+
+  .section-story, .section-ritual, .section-coffee, .section-detail, .section-origin, .section-handpicked, .section-process, .section-philosophy, .section-cta {
+    padding: 80px 0;
+  }
+
+  .editorial-title {
+    font-size: 2.4rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .product-image-wrap {
+    height: 320px;
+  }
+
+  .ritual-experience-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .ritual-steps-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .ritual-step-btn {
+    padding: 8px;
+  }
+
+  .step-name {
+    font-size: 1rem;
+  }
+
+  .ritual-step-title {
+    font-size: 1.8rem;
+  }
+
+  .origin-heading, .handpicked-title, .cta-heading {
+    font-size: 2.6rem;
+  }
+
+  .origin-sub, .handpicked-quote {
+    font-size: 1.3rem;
+  }
+
+  .philosophy-quote {
+    font-size: 2.1rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------
+   SMALL MOBILE (max-width: 480px)
+   ------------------------------------------ */
+@media screen and (max-width: 480px) {
+  .hero-tagline {
+    font-size: 1.8rem;
+  }
+
+  .editorial-title {
+    font-size: 2.1rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

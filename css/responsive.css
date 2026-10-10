@@ -1,0 +1,333 @@
+/* ==========================================
+   OUR STORIES — SOUTH INDIAN FILTER COFFEE
+   RESPONSIVE STYLES
+   ========================================== */
+
+/* ------------------------------------------
+   LARGE LAPTOP (max-width: 1200px)
+   ------------------------------------------ */
+@media screen and (max-width: 1200px) {
+  .title-split-row {
+    gap: 1.5rem;
+  }
+
+  .title-left, .title-right {
+    font-size: clamp(3.5rem, 7.5vw, 7.5rem);
+  }
+
+  .title-brass-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .pour-copy-box {
+    left: 10%;
+    max-width: 360px;
+  }
+
+  .footer-main-row {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+}
+
+/* ------------------------------------------
+   TABLET (max-width: 992px)
+   ------------------------------------------ */
+@media screen and (max-width: 992px) {
+  .header-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .title-split-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .title-left,
+  .title-right {
+    text-align: center;
+    font-size: clamp(3.8rem, 14vw, 5.5rem);
+    flex: initial;
+  }
+
+  .title-cup-frame,
+  #title-brass-frame {
+    width: clamp(220px, 50vw, 280px);
+    height: clamp(220px, 50vw, 280px);
+    margin-top: 0;
+  }
+
+  .filter-title-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .pour-showcase-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .pour-left-col {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .pour-copy-box {
+    min-height: 180px;
+    margin-bottom: 1.5rem;
+  }
+
+  .beat-heading {
+    font-size: 2.5rem;
+  }
+
+  .beat-text {
+    margin: 0 auto;
+  }
+
+  .bean-stepper-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .bean-step-counter {
+    justify-content: center;
+  }
+
+  .pour-right-col {
+    max-width: 100%;
+  }
+
+  .pour-video-card {
+    max-width: 360px;
+  }
+
+  .pour-video-inner {
+    max-height: 400px;
+  }
+
+  .pour-cup-showcase {
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+    right: -20px;
+  }
+
+  .ritual-home-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .products-order-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .pouch-wrapper {
+    width: 280px;
+  }
+
+  .arch-frame {
+    width: 280px;
+    height: 420px;
+  }
+
+  .brass-craft-container {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .craft-pillars-list {
+    text-align: left;
+  }
+
+  .craft-cup-card {
+    width: clamp(260px, 70vw, 380px);
+    height: clamp(260px, 70vw, 380px);
+  }
+
+  .footer-main-row {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* ------------------------------------------
+   MOBILE PORTRAIT (max-width: 768px)
+   ------------------------------------------ */
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .header-wordmark {
+    font-size: 1.05rem;
+  }
+
+  .header-logo-img {
+    width: 120px;
+    height: auto;
+  }
+
+  .hero-center-logo {
+    width: 130px;
+    max-width: 45vw;
+  }
+
+  .hero-kicker {
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 7.5vw, 44px);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-cta-btn {
+    padding: 13px 28px;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+  }
+
+  .title-left, .title-right {
+    font-size: 3.8rem;
+  }
+
+  .stat-number {
+    font-size: 4.2rem;
+  }
+
+  .section-brass-pour {
+    height: 350vh;
+  }
+
+  .pour-scrub-indicator {
+    display: none;
+  }
+
+  .pour-copy-box {
+    top: 25%;
+    left: 5%;
+    transform: none;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .pour-beat {
+    top: 0;
+    transform: none;
+  }
+
+  .pour-beat.active {
+    transform: none;
+  }
+
+  .beat-heading {
+    font-size: 1.9rem;
+  }
+
+  .brass-stage {
+    width: 300px;
+    height: 300px;
+    margin-top: 8rem;
+  }
+
+  .hero-brass-set-img {
+    width: 240px;
+  }
+
+  .home-title {
+    font-size: 2.6rem;
+  }
+
+  .products-order-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .arch-header-box {
+    top: 5vh;
+  }
+
+  .arch-title {
+    font-size: 2.2rem;
+  }
+
+  .arch-frame {
+    width: 240px;
+    height: 360px;
+    margin-top: 50px;
+  }
+
+  .story-caption {
+    font-size: 2.5rem;
+  }
+
+  .rotating-emblem {
+    bottom: 25px;
+    right: 25px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------
+   SMALL MOBILE (max-width: 480px)
+   ------------------------------------------ */
+@media screen and (max-width: 480px) {
+  .hero-wordmark {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+
+  .title-left, .title-right {
+    font-size: 3rem;
+  }
+
+  .beat-heading {
+    font-size: 1.6rem;
+  }
+
+  .home-title {
+    font-size: 2.2rem;
+  }
+
+  .shop-now-pill {
+    width: 100%;
+  }
+}

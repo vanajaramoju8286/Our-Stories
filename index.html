@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUR STORIES — South Indian Filter Coffee</title>
+  <meta name="description" content="Twenty-five years of heritage in every drop. Experience authentic South Indian filter coffee from the misty hills of Coorg.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lenis CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+  <!-- ==========================================
+       SITE PRELOADER (0% - 100% Coffee Brewing Load)
+  =========================================== -->
+  <div class="site-preloader" id="site-preloader">
+    <div class="preloader-content">
+      <div class="preloader-cup-box">
+        <svg viewBox="0 0 90 90" width="80" height="80" class="preloader-cup-svg">
+          <circle cx="45" cy="45" r="41" fill="none" stroke="rgba(231, 181, 80, 0.2)" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <!-- Rising steam waves -->
+          <path d="M38 24 Q36 17 39 10" fill="none" stroke="#E7B550" stroke-width="1.8" stroke-linecap="round" class="steam-line steam-1"/>
+          <path d="M45 22 Q48 15 44 8" fill="none" stroke="#E7B550" stroke-width="1.8" stroke-linecap="round" class="steam-line steam-2"/>
+          <path d="M52 24 Q50 17 53 10" fill="none" stroke="#E7B550" stroke-width="1.8" stroke-linecap="round" class="steam-line steam-3"/>
+          <!-- Tumbler and Dabara -->
+          <path d="M32 30 L58 30 L53 58 L37 58 Z" fill="rgba(231, 181, 80, 0.15)" stroke="#E7B550" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M26 56 L64 56 C64 70 56 74 45 74 C34 74 26 70 26 56 Z" fill="rgba(231, 181, 80, 0.25)" stroke="#E7B550" stroke-width="2"/>
+          <ellipse cx="45" cy="32" rx="11" ry="3" fill="#F6EFE6" opacity="0.9"/>
+        </svg>
+      </div>
+
+      <span class="preloader-kicker">BREWING THE HERITAGE</span>
+      
+      <div class="preloader-counter-row">
+        <span class="preloader-num" id="preloader-num">0</span>
+        <span class="preloader-pct">%</span>
+      </div>
+
+      <div class="preloader-track">
+        <div class="preloader-fill" id="preloader-fill"></div>
+      </div>
+
+      <p class="preloader-status" id="preloader-status">Slow-dripping single origin decoction...</p>
+    </div>
+  </div>
+
+  <!-- Cute Custom Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- ==========================================
+       SECTION 1 — HERO (Full-Screen Video)
+  =========================================== -->
+  <section class="section-hero" id="hero">
+    <div class="hero-video-container">
+      <video id="hero-video" class="hero-video" autoplay muted playsinline loop preload="auto" poster="assets/images/hero-plantation.jpg" src="assets/videos/Drone_flying_over_coffee_plantation_20261010163806.mp4">
+        <source src="assets/videos/Drone_flying_over_coffee_plantation_20261010163806.mp4" type="video/mp4">
+        <source src="assets/videos/Camera_moving_through_coffee_pla…_20261003121726.mp4" type="video/mp4">
+        <source src="assets/videos/camera-moving-plantation.mp4" type="video/mp4">
+        <source src="assets/videos/hero-plantation.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-fallback" style="background-image: url('assets/images/hero-plantation.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-foreground-leaves"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-logo-box">
+        <img src="assets/images/logo.png" alt="OUR STORIES Logo" class="hero-center-logo">
+      </div>
+      <span class="hero-kicker">WELCOME TO OUR STORIES</span>
+      <h1 class="hero-title">Every Cup Tells a Story.</h1>
+      <p class="hero-subtitle">Crafted coffee, comforting moments, and stories worth sharing.</p>
+      <div class="hero-action-row">
+        <a href="#filter-title" class="hero-cta-btn wet-paint-btn wet-paint-caramel">
+          <span>Explore Our Coffee</span>
+          <span class="cta-arrow">↓</span>
+          <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:24px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:20px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:10px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:16px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 2 — "FILTER COFFEE" TITLE (Melting Edge)
+  =========================================== -->
+  <section class="section-filter-title" id="filter-title">
+    <!-- Melting Dripping Edge Shape using shape.png -->
+    <div class="dripping-edge-wrapper">
+      <div class="dark-canopy-fill"></div>
+      <img src="assets/images/shape.png" alt="Dripping Edge Shape" class="dripping-shape-img">
+    </div>
+
+
+    <div class="filter-title-container">
+      <div class="title-split-row">
+        <h2 class="title-left">Filter</h2>
+        
+        <!-- Center South Indian Brass Davara Cup with High Froth Dome -->
+        <div class="title-cup-frame" id="title-brass-frame">
+          <img src="assets/images/brass-davara-froth-cup.png" alt="South Indian Brass Filter Coffee Davara Tumbler" class="title-cup-img">
+          <div class="cup-ground-shadow"></div>
+        </div>
+
+        <h2 class="title-right"><em>Coffee</em></h2>
+      </div>
+
+      <div class="filter-title-footer">
+        <div class="footer-left-para">
+          <p>
+            Slow-dripped decoction, frothed to perfection, and served in brass. The same cup, brewed the same way, since 2001.
+          </p>
+        </div>
+        <div class="footer-right-stat">
+          <span class="stat-number">25</span>
+          <div class="stat-label-group">
+            <span class="stat-line">YEARS OF THE</span>
+            <span class="stat-line">SAME POUR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 3 — PINNED BRASS POUR SEQUENCE (The Metre Pour)
+  =========================================== -->
+  <section class="section-brass-pour" id="brass-pour">
+    <div class="pinned-canvas-wrapper">
+      <div class="brass-glow-backdrop"></div>
+
+      <div class="pour-showcase-container">
+        <!-- Left Column: Copy & Interactive Coffee Bean Stepper -->
+        <div class="pour-left-col">
+          <!-- Copy box with dynamic beats -->
+          <div class="pour-copy-box">
+            <!-- Beat 1 -->
+            <div class="pour-beat beat-1 active" id="beat-1">
+              <h3 class="beat-heading">
+                <span class="heading-line-1">Served in brass,</span>
+                <span class="heading-line-2"><em>as it was.</em></span>
+              </h3>
+              <p class="beat-text">A solid heavy-gauge brass tumbler resting in the dabarah bowl, radiating warmth before the morning pour.</p>
+            </div>
+
+            <!-- Beat 2 -->
+            <div class="pour-beat beat-2" id="beat-2">
+              <h3 class="beat-heading">
+                <span class="heading-line-1">First, the</span>
+                <span class="heading-line-2"><em>slow lift.</em></span>
+              </h3>
+              <p class="beat-text">The tumbler ascends, separating the vessel from the saucer to prepare for the high-altitude meter aeration.</p>
+            </div>
+
+            <!-- Beat 3 (Exact match to reference photo) -->
+            <div class="pour-beat beat-3" id="beat-3">
+              <h3 class="beat-heading">
+                <span class="heading-line-1">Then the</span>
+                <span class="heading-line-2"><em>metre pour.</em></span>
+              </h3>
+              <p class="beat-text">One unbroken ribbon from tumbler to dabara. It cools the cup, marries milk and decoction, and wakes the aroma.</p>
+            </div>
+
+            <!-- Beat 4 -->
+            <div class="pour-beat beat-4" id="beat-4">
+              <h3 class="beat-heading">
+                <span class="heading-line-1">Froth, and</span>
+                <span class="heading-line-2"><em>golden stillness.</em></span>
+              </h3>
+              <p class="beat-text">The stream halts, leaving a rich velvety golden-caramel foam resting atop the brass vessel ready for the first sip.</p>
+            </div>
+          </div>
+
+          <!-- Coffee Bean Stepper Slider Track (Exact match to reference photo) -->
+          <div class="bean-stepper-container">
+            <div class="bean-slider-track" id="bean-slider-track">
+              <div class="bean-track-progress" id="bean-track-progress"></div>
+              
+              <!-- Ticks along the bar -->
+              <div class="bean-track-ticks">
+                <div class="track-tick active" data-step="1" style="left: 4%;">
+                  <span class="tick-dot"></span>
+                </div>
+                <div class="track-tick" data-step="2" style="left: 33%;">
+                  <span class="tick-dot"></span>
+                </div>
+                <div class="track-tick" data-step="3" style="left: 64%;">
+                  <span class="tick-dot"></span>
+                </div>
+                <div class="track-tick" data-step="4" style="left: 96%;">
+                  <span class="tick-dot"></span>
+                </div>
+              </div>
+
+              <!-- Sliding 3D Coffee Bean Thumb -->
+              <div class="bean-thumb-wrapper" id="bean-thumb">
+                <img src="assets/images/coffee-bean-thumb.png" alt="Coffee Bean Slider Indicator" class="bean-thumb-img">
+              </div>
+            </div>
+
+            <!-- Step Labels below the track -->
+            <div class="bean-step-labels">
+              <span class="step-label active" data-step="1" style="left: 4%;">LIFT</span>
+              <span class="step-label" data-step="2" style="left: 33%;">TILT</span>
+              <span class="step-label" data-step="3" style="left: 64%;">POUR</span>
+              <span class="step-label" data-step="4" style="left: 96%;">FROTH</span>
+            </div>
+
+            <!-- Step Counter (01 / 04, 02 / 04, 03 / 04, 04 / 04) -->
+            <div class="bean-step-counter">
+              <span class="counter-num" id="counter-current">01</span>
+              <span class="counter-sep">/</span>
+              <span class="counter-total">04</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Video Blended Seamlessly with Background -->
+        <div class="pour-right-col" id="brass-stage">
+          <div class="pour-video-card">
+            <!-- Smooth Scroll-Scrubbed Video blended into background -->
+            <div class="pour-video-inner">
+              <video 
+                id="brass-pour-video" 
+                class="pour-scrub-video" 
+                src="assets/videos/Pouring_South_Indian_filter_coffee_20261010143613.mp4" 
+                muted 
+                playsinline 
+                preload="auto"
+              ></video>
+              <div class="pour-video-overlay-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 3B — THE SACRED RATIO & BRASS CRAFT
+  =========================================== -->
+  <section class="section-brass-craft" id="brass-craft">
+    <div class="brass-craft-container">
+      <!-- Left Column: Sacred Ratio Story & Pillars -->
+      <div class="craft-left-col">
+        <span class="section-kicker">THE SACRED 80:20 RATIO</span>
+        <h2 class="craft-title">
+          Slow gravity drip, <br>
+          <em>perfected in brass.</em>
+        </h2>
+        <p class="craft-lead">
+          True South Indian filter coffee is an exacting craft. Eighty percent high-grown shade Arabica roasted slow to develop rich cocoa notes, married with twenty percent French chicory for velvety body, caramel viscosity, and lasting golden froth.
+        </p>
+
+        <div class="craft-pillars-list">
+          <div class="craft-pillar-item">
+            <div class="pillar-num">01</div>
+            <div class="pillar-info">
+              <h4 class="pillar-title">12-Hour Gravity Decoction</h4>
+              <p class="pillar-desc">Water drips drop-by-drop through micro-perforated brass, yielding a thick, concentrated first extraction without astringency.</p>
+            </div>
+          </div>
+          <div class="craft-pillar-item">
+            <div class="pillar-num">02</div>
+            <div class="pillar-info">
+              <h4 class="pillar-title">Scalded Milk at 85°C</h4>
+              <p class="pillar-desc">Rich full-fat milk warmed just beneath boiling to unlock caramelized natural sweetness without scorching.</p>
+            </div>
+          </div>
+          <div class="craft-pillar-item">
+            <div class="pillar-num">03</div>
+            <div class="pillar-info">
+              <h4 class="pillar-title">The Metre Aeration</h4>
+              <p class="pillar-desc">Poured from an elevation between tumbler and dabara to form an airy, luscious froth blanket on top.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="craft-cta-box">
+          <a href="#ritual-home" class="craft-cta-btn wet-paint-btn wet-paint-brass">
+            <span>TASTE THE DIFFERENCE</span>
+            <span class="craft-cta-arrow">→</span>
+            <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:24px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+            <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:20px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+            <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:10px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+            <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:16px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Brass Davara Froth Cup Showcase -->
+      <div class="craft-right-col" id="craft-cup-stage">
+        <div class="craft-cup-card">
+          <div class="craft-cup-halo"></div>
+          <img src="assets/images/brass-davara-froth-cup.png" alt="South Indian Brass Davara with Golden Froth" class="craft-cup-img" id="craft-cup-img">
+          <div class="craft-cup-badge">
+            <span class="badge-accent">EST. 2001</span>
+            <span class="badge-name">TRADITIONAL BRASS VESSEL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 4 — "TAKE THE RITUAL HOME" (Order Cards Grid)
+  =========================================== -->
+  <section class="section-ritual-home" id="ritual-home">
+    <!-- Coffee Beans Falling Video Background -->
+    <div class="ritual-video-bg-container">
+      <video id="ritual-beans-video" class="ritual-video-bg" autoplay muted playsinline loop preload="auto">
+        <source src="assets/videos/Coffee_beans_falling_20261010124348.mp4" type="video/mp4">
+        <source src="assets/videos/coffee-beans-falling.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Falling Beans Canvas -->
+    <canvas id="beans-canvas" class="beans-canvas"></canvas>
+
+    <div class="ritual-home-content">
+      <div class="ritual-home-header">
+        <div class="ritual-header-text">
+          <span class="section-kicker">CURATED BLENDS</span>
+          <h2 class="home-title">Take the <em>ritual</em> home</h2>
+          <p class="home-subtitle">Authentic shade-grown Arabica slow-roasted to bring South Indian heritage into your daily cup.</p>
+        </div>
+        <a href="#ritual-grid" class="shop-now-pill wet-paint-btn wet-paint-brass" id="shop-btn">
+          <span>EXPLORE ALL BLENDS</span>
+          <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:24px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:20px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:10px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:16px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+        </a>
+      </div>
+
+      <!-- Order Cards Grid -->
+      <div class="products-order-grid" id="ritual-grid">
+        
+        <!-- Card 1 -->
+        <div class="order-card" data-tilt="true">
+          <div class="card-image-box">
+            <span class="card-badge">FLAGSHIP</span>
+            <img src="assets/product_filter_coffee.jpg" alt="Filter Coffee Blend" class="card-img">
+          </div>
+          <div class="card-body">
+            <span class="card-origin">CHIKMAGALUR SINGLE ORIGIN</span>
+            <h3 class="card-title">Filter Coffee Blend</h3>
+            <p class="card-notes">Dark Chocolate • Caramel • Spiced Nutmeg</p>
+            <div class="card-footer-row">
+              <span class="card-price">₹450 <small>/ 250g</small></span>
+              <button class="order-action-btn wet-paint-btn wet-paint-espresso">
+                <span>ORDER NOW</span>
+                <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:18px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:14px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:8px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:12px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="order-card" data-tilt="true">
+          <div class="card-image-box">
+            <span class="card-badge">DARK ROAST</span>
+            <img src="assets/product_south_indian.jpg" alt="South Indian Dark Blend" class="card-img">
+          </div>
+          <div class="card-body">
+            <span class="card-origin">BABA BUDAN RANGE</span>
+            <h3 class="card-title">South Indian Dark Blend</h3>
+            <p class="card-notes">Malt • Roasted Chicory • Thick Body</p>
+            <div class="card-footer-row">
+              <span class="card-price">₹480 <small>/ 250g</small></span>
+              <button class="order-action-btn wet-paint-btn wet-paint-espresso">
+                <span>ORDER NOW</span>
+                <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:18px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:14px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:8px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:12px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="order-card" data-tilt="true">
+          <div class="card-image-box">
+            <span class="card-badge">RESERVE</span>
+            <img src="assets/product_estate.jpg" alt="Coorg Estate Reserve" class="card-img">
+          </div>
+          <div class="card-body">
+            <span class="card-origin">COORG CANOPY ESTATE</span>
+            <h3 class="card-title">Coorg Estate Reserve</h3>
+            <p class="card-notes">Wild Honey • Toasted Almond • Floral</p>
+            <div class="card-footer-row">
+              <span class="card-price">₹540 <small>/ 250g</small></span>
+              <button class="order-action-btn wet-paint-btn wet-paint-espresso">
+                <span>ORDER NOW</span>
+                <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:18px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:14px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:8px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:12px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="order-card" data-tilt="true">
+          <div class="card-image-box">
+            <span class="card-badge">SIGNATURE SET</span>
+            <img src="assets/product_signature.jpg" alt="Estate Signature Blend & Brass Set" class="card-img">
+          </div>
+          <div class="card-body">
+            <span class="card-origin">HEAVY-GAUGE SOLID BRASS</span>
+            <h3 class="card-title">Estate Signature Blend</h3>
+            <p class="card-notes">Hand-Hammered Brass • 80:20 Roast • Rich Crema</p>
+            <div class="card-footer-row">
+              <span class="card-price">₹890 <small>/ Set</small></span>
+              <button class="order-action-btn wet-paint-btn wet-paint-espresso">
+                <span>ORDER NOW</span>
+                <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:18px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:14px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:8px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+                <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:12px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 5 — "FROM THE HILLS OF COORG" (Arch Reveal)
+  =========================================== -->
+  <section class="section-coorg-arch" id="coorg-arch">
+    <div class="arch-sticky-wrapper">
+      <div class="arch-header-box" id="arch-header-box">
+        <h2 class="arch-title">From the hills of <em>Coorg.</em></h2>
+      </div>
+
+      <!-- Arch Masked Photo Frame -->
+      <div class="arch-frame" id="arch-frame">
+        <img src="assets/images/coorg_harvest_hd.jpg" alt="Coffee Cherries Harvesters in Coorg" class="arch-img" id="arch-img">
+        <div class="arch-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 6 — FULL-SCREEN PHOTO STORY (HD Experience)
+  =========================================== -->
+  <section class="section-photo-story" id="photo-story">
+    <div class="photo-story-wrapper">
+      <!-- HD Photo Layer 1: Mist Plantation -->
+      <img src="assets/hero_plantation.jpg" alt="Coorg Coffee Estate Mist Canopy" class="full-story-img active" id="story-img-1">
+      <!-- HD Photo Layer 2: Hand Picked Cherries -->
+      <img src="assets/hand_picked.jpg" alt="Hand Picked Arabica Cherries" class="full-story-img" id="story-img-2">
+      <!-- HD Photo Layer 3: Drying Yard & Pickers -->
+      <img src="assets/images/pickers-full.jpg" alt="Coorg Coffee Drying Yard and Pickers" class="full-story-img" id="story-img-3">
+      
+      <div class="story-vignette"></div>
+
+      <!-- Story Progress Dots -->
+      <div class="story-progress-indicator">
+        <span class="story-dot active" data-slide="1"></span>
+        <span class="story-dot" data-slide="2"></span>
+        <span class="story-dot" data-slide="3"></span>
+      </div>
+
+      <!-- Changing Captions on Scroll -->
+      <div class="story-caption-box">
+        <div class="story-caption cap-1 active" id="cap-1">
+          <span class="caption-tag">THE ORIGIN</span>
+          <h3 class="caption-heading">"Rooted in Coorg."</h3>
+          <p class="caption-sub">Shade-grown at 3,500 feet under silver oak and wild pepper vines.</p>
+        </div>
+        <div class="story-caption cap-2" id="cap-2">
+          <span class="caption-tag">THE HARVEST</span>
+          <h3 class="caption-heading">"Picked by <em>hand.</em>"</h3>
+          <p class="caption-sub">Only deep crimson, fully ripe cherries selected one by one at dawn.</p>
+        </div>
+        <div class="story-caption cap-3" id="cap-3">
+          <span class="caption-tag">THE HERITAGE</span>
+          <h3 class="caption-heading">"Sun-cured on estate patios."</h3>
+          <p class="caption-sub">Slow-cured in the mountain breeze before slow artisanal wood roasting.</p>
+        </div>
+      </div>
+
+      <!-- Rotating Circular Emblem Badge -->
+      <div class="rotating-emblem" id="rotating-emblem">
+        <svg viewBox="0 0 150 150" width="130" height="130">
+          <path id="textPath" d="M 75, 75 m -55, 0 a 55,55 0 1,1 110,0 a 55,55 0 1,1 -110,0" fill="none"/>
+          <text font-family="'Jost', sans-serif" font-size="10.5" font-weight="500" letter-spacing="3" fill="#E7B550">
+            <textPath href="#textPath">OUR STORIES • TRADITIONAL FILTER COFFEE • EST 2026 •</textPath>
+          </text>
+        </svg>
+        <div class="emblem-center-dot">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 7 — FOOTER
+  =========================================== -->
+  <footer class="section-footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-main-row">
+        <!-- Left Brand Box -->
+        <div class="footer-brand-box">
+          <div class="footer-logo-row">
+            <img src="assets/logo.svg" alt="OUR STORIES" class="footer-logo-img">
+          </div>
+          <p class="footer-desc">
+            Twenty-five years of heritage in every drop. Crafted with patience, single-origin shade-grown beans, and authentic brass decoction.
+          </p>
+        </div>
+
+        <!-- Right Link Columns -->
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4 class="col-heading">EXPLORE</h4>
+            <ul class="col-links">
+              <li><a href="#hero">The Story</a></li>
+              <li><a href="#brass-pour">The Taste</a></li>
+              <li><a href="#brass-craft">The Brass Craft</a></li>
+              <li><a href="#coorg-arch">The Estate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-heading">THE RITUAL</h4>
+            <ul class="col-links">
+              <li><a href="#brass-pour">Brass Decoction</a></li>
+              <li><a href="#brass-craft">80:20 Ratio</a></li>
+              <li><a href="#ritual-home">Curated Blends</a></li>
+              <li><a href="#coorg-arch">Coorg Harvest</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-heading">CONNECT</h4>
+            <ul class="col-links">
+              <li><a href="mailto:hello@ourstoriescoffee.com">hello@ourstoriescoffee.com</a></li>
+              <li><a href="#">Coorg Estates • India</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright">© 2026 OUR STORIES Coffee. All rights reserved.</p>
+        <button id="back-top-btn" class="back-top-btn wet-paint-btn wet-paint-caramel">
+          <span>BACK TO TOP ↑</span>
+          <div class="drip-stem-wrap drip-1"><div class="drip-stem" style="height:18px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-2"><div class="drip-stem" style="height:14px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-3"><div class="drip-stem" style="height:8px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+          <div class="drip-stem-wrap drip-4"><div class="drip-stem" style="height:12px"></div><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><svg width="6" height="6" viewBox="0 0 6 6" fill="none" class="drip-fillet-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z" class="fillet-path"/></svg><div class="drip-droplet"></div></div>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: GSAP, ScrollTrigger, Lenis, and Custom Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+  <!-- Project JavaScript Modules -->
+  <script src="js/beans.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

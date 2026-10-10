@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4EBDD" />
+      <stop offset="50%" stop-color="#B87945" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="warmCreamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F2" />
+      <stop offset="100%" stop-color="#F4EBDD" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Emblem: Twin Coffee Leaves & Coffee Bean Motif -->
+  <g transform="translate(20, 20)">
+    <!-- Outer ring outline -->
+    <circle cx="40" cy="40" r="36" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+    <circle cx="40" cy="40" r="32" fill="none" stroke="#B87945" stroke-width="1"/>
+    
+    <!-- Stylized Coffee Leaf 1 -->
+    <path d="M40 16 C52 24, 56 38, 40 56 C24 38, 28 24, 40 16 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.8"/>
+    <!-- Center Vein -->
+    <path d="M40 16 L40 56" stroke="#B87945" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Bean curve -->
+    <path d="M34 32 C38 36, 42 44, 46 48" fill="none" stroke="#F4EBDD" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Decorative star dots -->
+    <circle cx="40" cy="8" r="1.5" fill="#D4AF37"/>
+    <circle cx="40" cy="72" r="1.5" fill="#D4AF37"/>
+    <circle cx="8" cy="40" r="1.5" fill="#D4AF37"/>
+    <circle cx="72" cy="40" r="1.5" fill="#D4AF37"/>
+  </g>
+
+  <!-- Typography -->
+  <!-- Primary Brand Name -->
+  <text x="110" y="58" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="34" font-weight="600" letter-spacing="7" fill="url(#warmCreamGrad)">OUR STORIES</text>
+  
+  <!-- Sub-label -->
+  <text x="112" y="82" font-family="'Manrope', 'Montserrat', sans-serif" font-size="9" font-weight="500" letter-spacing="5.5" fill="#B87945" opacity="0.9">INDIAN COFFEE HERITAGE • EST. 2026</text>
+  
+  <!-- Subtle line accent -->
+  <line x1="112" y1="92" x2="380" y2="92" stroke="url(#goldGrad)" stroke-width="0.75" opacity="0.4"/>
+</svg>
